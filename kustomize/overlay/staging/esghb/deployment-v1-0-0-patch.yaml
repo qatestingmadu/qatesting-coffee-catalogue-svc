@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: esghb-v1-0-0
+  labels:
+    app: esghb-v1-0-0
+    applicationId: app_d480ad1b-b78c-45e9-adef-cf07743cc305
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_ced30187-9424-4049-9272-e8dbf6b45fbc
+    environmentId: env_79a7104f-541a-4007-afdb-98450ca722ce
+  annotations:
+    reloader.stakater.com/auto: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: esghb-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: esghb-v1-0-0
+        applicationId: app_d480ad1b-b78c-45e9-adef-cf07743cc305
+        version: v1.0.0
+        organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+        projectId: project_ced30187-9424-4049-9272-e8dbf6b45fbc
+        environmentId: env_79a7104f-541a-4007-afdb-98450ca722ce
