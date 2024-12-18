@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-repo-driven-v1-0-0
+  labels:
+    app: ai-repo-driven-v1-0-0
+    applicationId: app_5e518adc-161a-4bb7-82f3-623a05bbe47c
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_ced30187-9424-4049-9272-e8dbf6b45fbc
+    environmentId: env_08f35a2d-6d8d-4ffc-a53b-5eb0d0765d59
+  annotations:
+    reloader.stakater.com/auto: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: ai-repo-driven-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: ai-repo-driven-v1-0-0
+        applicationId: app_5e518adc-161a-4bb7-82f3-623a05bbe47c
+        version: v1.0.0
+        organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+        projectId: project_ced30187-9424-4049-9272-e8dbf6b45fbc
+        environmentId: env_08f35a2d-6d8d-4ffc-a53b-5eb0d0765d59
